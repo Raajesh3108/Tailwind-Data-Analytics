@@ -13,36 +13,36 @@ const blabla = document.querySelector(".blabla")
 const clacla = document.querySelector(".clacla")
 let mybutton = document.getElementById("myBtn");
 
-icon.addEventListener("click", function(){
-    open.classList.toggle("ms:hidden")
-    openn.classList.toggle("ms:hidden")
+icon.addEventListener("click", function () {
+  open.classList.toggle("ms:hidden")
+  openn.classList.toggle("ms:hidden")
 })
 
 
-monthly.addEventListener("click", function(){
-    number.textContent="$19"
-    number1.textContent="$36"
-    parag.textContent = "/ Monthly"
-    parag1.textContent = "/ Monthly"
-    parag2.textContent = "/ Monthly"
-    monthly.classList.add("active")
-    yearly.classList.remove("active")
-  
+monthly.addEventListener("click", function () {
+  number.textContent = "$19"
+  number1.textContent = "$36"
+  parag.textContent = "/ Monthly"
+  parag1.textContent = "/ Monthly"
+  parag2.textContent = "/ Monthly"
+  monthly.classList.add("active")
+  yearly.classList.remove("active")
+
 })
-yearly.addEventListener("click", function(){
-    number.textContent="$108"
-    number1.textContent="$390"
-    parag.textContent = "/ Yearly"
-    parag1.textContent = "/ Yearly"
-    parag2.textContent = "/ Yearly"
-     yearly.classList.add("active")
-     monthly.classList.remove("active")
-  
+yearly.addEventListener("click", function () {
+  number.textContent = "$108"
+  number1.textContent = "$390"
+  parag.textContent = "/ Yearly"
+  parag1.textContent = "/ Yearly"
+  parag2.textContent = "/ Yearly"
+  yearly.classList.add("active")
+  monthly.classList.remove("active")
+
 })
 
-blabla.addEventListener("click", function(){
+blabla.addEventListener("click", function () {
 
-    clacla.classList.add("collapse-content")
+  clacla.classList.add("collapse-content")
 })
 
 const showOnPx = 100;
@@ -61,11 +61,10 @@ document.addEventListener("scroll", () => {
 })
 
 const goToTop = () => {
-    document.body.scrollIntoView({
-        behavior: "smooth",
-      });
-  };
-  
-  backToTopButton.addEventListener("click", goToTop)
+  document.body.scrollIntoView({
+    behavior: "smooth",
+  });
+};
 
- 
+backToTopButton.addEventListener("click", goToTop)
+
